@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C14AE331E844307001D4467 /* IAirbnbListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE321E844307001D4467 /* IAirbnbListData.swift */; };
+		6C14AE351E84436A001D4467 /* AirbnbListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE341E84436A001D4467 /* AirbnbListData.swift */; };
+		6C14AE371E844A3F001D4467 /* DataFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE361E844A3F001D4467 /* DataFavorite.swift */; };
+		6C14AE391E844A61001D4467 /* IDataFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE381E844A61001D4467 /* IDataFavorite.swift */; };
+		6C14AE3B1E844ABF001D4467 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE3A1E844ABF001D4467 /* FavoriteModel.swift */; };
+		6C14AE3D1E844B7C001D4467 /* DBParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE3C1E844B7C001D4467 /* DBParser.swift */; };
+		6C14AE501E84C0AC001D4467 /* ServiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE4F1E84C0AC001D4467 /* ServiceParser.swift */; };
+		6C14AE521E85BF7E001D4467 /* PlacesManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C14AE511E85BF7E001D4467 /* PlacesManagement.swift */; };
+		6C5BBEB91E8212CF0000E334 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEB81E8212CF0000E334 /* MapViewController.swift */; };
+		6C5BBEBB1E8215A30000E334 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEBA1E8215A30000E334 /* PlaceTableViewCell.swift */; };
+		6C5BBEBD1E8216330000E334 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEBC1E8216330000E334 /* HomeViewController.swift */; };
+		6C5BBEC11E82DC110000E334 /* IProxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEC01E82DC110000E334 /* IProxyService.swift */; };
+		6C5BBEC31E82DC3E0000E334 /* ProxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEC21E82DC3E0000E334 /* ProxyService.swift */; };
+		6C5BBEC51E82F0790000E334 /* ConfigApp.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C5BBEC41E82F0790000E334 /* ConfigApp.plist */; };
+		6C5BBEC71E82F16A0000E334 /* IAirbnbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEC61E82F16A0000E334 /* IAirbnbService.swift */; };
+		6C5BBEC91E82F2E60000E334 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBEC81E82F2E60000E334 /* LocationModel.swift */; };
+		6C5BBECB1E82F3030000E334 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBECA1E82F3030000E334 /* PlaceModel.swift */; };
+		6C5BBECD1E82F3450000E334 /* CoordinatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBECC1E82F3450000E334 /* CoordinatesModel.swift */; };
+		6C5BBECF1E82F4CF0000E334 /* AirbnbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBECE1E82F4CF0000E334 /* AirbnbService.swift */; };
+		6C5BBED11E82F7630000E334 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBED01E82F7630000E334 /* ClientModel.swift */; };
+		6C5BBED31E831B7B0000E334 /* DepencyContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBED21E831B7B0000E334 /* DepencyContainers.swift */; };
+		6C5BBED51E831C2A0000E334 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BBED41E831C2A0000E334 /* CoreDataStack.swift */; };
+		6CC5FC541E81D3D6002E99E9 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5FC531E81D3D6002E99E9 /* FavoritesViewController.swift */; };
+		6CC5FC561E81D3E9002E99E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5FC551E81D3E9002E99E9 /* ProfileViewController.swift */; };
+		6CCAE0251E86162A00ED6DEF /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE0241E86162A00ED6DEF /* UIImageView+Download.swift */; };
+		6CCAE0321E862B3300ED6DEF /* Places+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE02E1E862B3300ED6DEF /* Places+CoreDataClass.swift */; };
+		6CCAE0331E862B3300ED6DEF /* Places+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE02F1E862B3300ED6DEF /* Places+CoreDataProperties.swift */; };
+		6CCAE0341E862B3300ED6DEF /* Favorites+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE0301E862B3300ED6DEF /* Favorites+CoreDataClass.swift */; };
+		6CCAE0351E862B3300ED6DEF /* Favorites+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE0311E862B3300ED6DEF /* Favorites+CoreDataProperties.swift */; };
+		6CCAE0371E862BE500ED6DEF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE0361E862BE500ED6DEF /* DetailViewController.swift */; };
+		6CCAE0391E876D4600ED6DEF /* GMapsCLLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCAE0381E876D4600ED6DEF /* GMapsCLLocationVC.swift */; };
+		6CF1F6191E7C9DD300D2DDD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F6181E7C9DD300D2DDD7 /* AppDelegate.swift */; };
+		6CF1F61E1E7C9DD300D2DDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1F61C1E7C9DD300D2DDD7 /* Main.storyboard */; };
+		6CF1F6211E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F61F1E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodeld */; };
+		6CF1F6231E7C9DD300D2DDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1F6221E7C9DD300D2DDD7 /* Assets.xcassets */; };
+		6CF1F6261E7C9DD300D2DDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1F6241E7C9DD300D2DDD7 /* LaunchScreen.storyboard */; };
+		6CF1F6391E7C9F0E00D2DDD7 /* ConfigApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F6381E7C9F0E00D2DDD7 /* ConfigApp.swift */; };
+		6CF1F63D1E7CA0A100D2DDD7 /* IDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F63C1E7CA0A100D2DDD7 /* IDataManager.swift */; };
+		6CF1F63F1E7CA0C000D2DDD7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F63E1E7CA0C000D2DDD7 /* DataManager.swift */; };
+		6CF1F6411E7CC85C00D2DDD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F6401E7CC85C00D2DDD7 /* LoginViewController.swift */; };
+		6CF1F6461E7CD46600D2DDD7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF1F6421E7CD46600D2DDD7 /* Bolts.framework */; };
+		6CF1F6471E7CD46600D2DDD7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF1F6431E7CD46600D2DDD7 /* FBSDKCoreKit.framework */; };
+		6CF1F6481E7CD46600D2DDD7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF1F6441E7CD46600D2DDD7 /* FBSDKLoginKit.framework */; };
+		6CF1F6491E7CD46600D2DDD7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF1F6451E7CD46600D2DDD7 /* FBSDKShareKit.framework */; };
+		6CF1F6521E7CDB2100D2DDD7 /* UIViewController+SingleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F6511E7CDB2100D2DDD7 /* UIViewController+SingleAlert.swift */; };
+		6CF1F6541E7CE05D00D2DDD7 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F6531E7CE05D00D2DDD7 /* TabViewController.swift */; };
+		6CF6D52B1E88468900E15C4A /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6D52A1E88468900E15C4A /* PlaceMarker.swift */; };
+		6CF6D52D1E8886E600E15C4A /* mainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6D52C1E8886E600E15C4A /* mainNavController.swift */; };
+		6CF6D52F1E888DDD00E15C4A /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6D52E1E888DDD00E15C4A /* UIColor+Hex.swift */; };
+		6CF6D5311E8895F700E15C4A /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6D5301E8895F700E15C4A /* UIView+Shadow.swift */; };
+		9698DC8CD758CD89E2B95354 /* Pods_SDevAirBNB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2079388FCC2E31F2FFC7258 /* Pods_SDevAirBNB.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E8F73E050A23ACE45CB68CB /* Pods-SDevAirBNB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDevAirBNB.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDevAirBNB/Pods-SDevAirBNB.release.xcconfig"; sourceTree = "<group>"; };
+		6C14AE321E844307001D4467 /* IAirbnbListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAirbnbListData.swift; sourceTree = "<group>"; };
+		6C14AE341E84436A001D4467 /* AirbnbListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirbnbListData.swift; sourceTree = "<group>"; };
+		6C14AE361E844A3F001D4467 /* DataFavorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFavorite.swift; sourceTree = "<group>"; };
+		6C14AE381E844A61001D4467 /* IDataFavorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDataFavorite.swift; sourceTree = "<group>"; };
+		6C14AE3A1E844ABF001D4467 /* FavoriteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		6C14AE3C1E844B7C001D4467 /* DBParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBParser.swift; sourceTree = "<group>"; };
+		6C14AE4F1E84C0AC001D4467 /* ServiceParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceParser.swift; sourceTree = "<group>"; };
+		6C14AE511E85BF7E001D4467 /* PlacesManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesManagement.swift; sourceTree = "<group>"; };
+		6C5BBEB81E8212CF0000E334 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6C5BBEBA1E8215A30000E334 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		6C5BBEBC1E8216330000E334 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6C5BBEC01E82DC110000E334 /* IProxyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProxyService.swift; sourceTree = "<group>"; };
+		6C5BBEC21E82DC3E0000E334 /* ProxyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyService.swift; sourceTree = "<group>"; };
+		6C5BBEC41E82F0790000E334 /* ConfigApp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ConfigApp.plist; sourceTree = "<group>"; };
+		6C5BBEC61E82F16A0000E334 /* IAirbnbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAirbnbService.swift; sourceTree = "<group>"; };
+		6C5BBEC81E82F2E60000E334 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		6C5BBECA1E82F3030000E334 /* PlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		6C5BBECC1E82F3450000E334 /* CoordinatesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesModel.swift; sourceTree = "<group>"; };
+		6C5BBECE1E82F4CF0000E334 /* AirbnbService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirbnbService.swift; sourceTree = "<group>"; };
+		6C5BBED01E82F7630000E334 /* ClientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		6C5BBED21E831B7B0000E334 /* DepencyContainers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepencyContainers.swift; sourceTree = "<group>"; };
+		6C5BBED41E831C2A0000E334 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6CC5FC531E81D3D6002E99E9 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		6CC5FC551E81D3E9002E99E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6CCAE0241E86162A00ED6DEF /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		6CCAE02E1E862B3300ED6DEF /* Places+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Places+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CCAE02F1E862B3300ED6DEF /* Places+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Places+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CCAE0301E862B3300ED6DEF /* Favorites+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CCAE0311E862B3300ED6DEF /* Favorites+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorites+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CCAE0361E862BE500ED6DEF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6CCAE0381E876D4600ED6DEF /* GMapsCLLocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapsCLLocationVC.swift; sourceTree = "<group>"; };
+		6CF1F6151E7C9DD300D2DDD7 /* SDevAirBNB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDevAirBNB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF1F6181E7C9DD300D2DDD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CF1F61D1E7C9DD300D2DDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CF1F6201E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SDevAirBNB.xcdatamodel; sourceTree = "<group>"; };
+		6CF1F6221E7C9DD300D2DDD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CF1F6251E7C9DD300D2DDD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CF1F6271E7C9DD300D2DDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF1F6381E7C9F0E00D2DDD7 /* ConfigApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigApp.swift; sourceTree = "<group>"; };
+		6CF1F63C1E7CA0A100D2DDD7 /* IDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDataManager.swift; sourceTree = "<group>"; };
+		6CF1F63E1E7CA0C000D2DDD7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6CF1F6401E7CC85C00D2DDD7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6CF1F6421E7CD46600D2DDD7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6CF1F6431E7CD46600D2DDD7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6CF1F6441E7CD46600D2DDD7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6CF1F6451E7CD46600D2DDD7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6CF1F64A1E7CD51500D2DDD7 /* SDevAirBNB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDevAirBNB-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CF1F6511E7CDB2100D2DDD7 /* UIViewController+SingleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SingleAlert.swift"; sourceTree = "<group>"; };
+		6CF1F6531E7CE05D00D2DDD7 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		6CF6D52A1E88468900E15C4A /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		6CF6D52C1E8886E600E15C4A /* mainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainNavController.swift; sourceTree = "<group>"; };
+		6CF6D52E1E888DDD00E15C4A /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		6CF6D5301E8895F700E15C4A /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		8B1024AEB9300BD5FB05CD74 /* Pods-SDevAirBNB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDevAirBNB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDevAirBNB/Pods-SDevAirBNB.debug.xcconfig"; sourceTree = "<group>"; };
+		A2079388FCC2E31F2FFC7258 /* Pods_SDevAirBNB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDevAirBNB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CF1F6121E7C9DD300D2DDD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9698DC8CD758CD89E2B95354 /* Pods_SDevAirBNB.framework in Frameworks */,
+				6CF1F6471E7CD46600D2DDD7 /* FBSDKCoreKit.framework in Frameworks */,
+				6CF1F6491E7CD46600D2DDD7 /* FBSDKShareKit.framework in Frameworks */,
+				6CF1F6481E7CD46600D2DDD7 /* FBSDKLoginKit.framework in Frameworks */,
+				6CF1F6461E7CD46600D2DDD7 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		106BDF3D769EF5F053EE1EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6421E7CD46600D2DDD7 /* Bolts.framework */,
+				6CF1F6431E7CD46600D2DDD7 /* FBSDKCoreKit.framework */,
+				6CF1F6441E7CD46600D2DDD7 /* FBSDKLoginKit.framework */,
+				6CF1F6451E7CD46600D2DDD7 /* FBSDKShareKit.framework */,
+				A2079388FCC2E31F2FFC7258 /* Pods_SDevAirBNB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C14AE5B1E85DAD7001D4467 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6CCAE02E1E862B3300ED6DEF /* Places+CoreDataClass.swift */,
+				6CCAE02F1E862B3300ED6DEF /* Places+CoreDataProperties.swift */,
+				6CCAE0301E862B3300ED6DEF /* Favorites+CoreDataClass.swift */,
+				6CCAE0311E862B3300ED6DEF /* Favorites+CoreDataProperties.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		6C5BBEBE1E82DBB30000E334 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6C5BBEC01E82DC110000E334 /* IProxyService.swift */,
+				6C5BBEC61E82F16A0000E334 /* IAirbnbService.swift */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		6C5BBEBF1E82DBBA0000E334 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				6C5BBEC21E82DC3E0000E334 /* ProxyService.swift */,
+				6C5BBECE1E82F4CF0000E334 /* AirbnbService.swift */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		6CF1F60C1E7C9DD300D2DDD7 = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6171E7C9DD300D2DDD7 /* SDevAirBNB */,
+				6CF1F6161E7C9DD300D2DDD7 /* Products */,
+				B31522A50F27DD70ED2ED191 /* Pods */,
+				106BDF3D769EF5F053EE1EB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CF1F6161E7C9DD300D2DDD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6151E7C9DD300D2DDD7 /* SDevAirBNB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CF1F6171E7C9DD300D2DDD7 /* SDevAirBNB */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6371E7C9EBA00D2DDD7 /* Extensions */,
+				6CF1F6341E7C9E3200D2DDD7 /* Helpers */,
+				6CF1F6331E7C9E2300D2DDD7 /* Others */,
+				6CF1F6321E7C9E0800D2DDD7 /* UI */,
+				6CF1F6311E7C9DF700D2DDD7 /* Config */,
+				6CF1F6301E7C9DF100D2DDD7 /* Models */,
+				6CF1F62F1E7C9DE900D2DDD7 /* Controllers */,
+				6CF1F62E1E7C9DE300D2DDD7 /* Services */,
+				6CF1F62D1E7C9DDD00D2DDD7 /* Data */,
+				6CF1F6181E7C9DD300D2DDD7 /* AppDelegate.swift */,
+				6C5BBED21E831B7B0000E334 /* DepencyContainers.swift */,
+			);
+			path = SDevAirBNB;
+			sourceTree = "<group>";
+		};
+		6CF1F62D1E7C9DDD00D2DDD7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6C14AE5B1E85DAD7001D4467 /* Entities */,
+				6CF1F63B1E7CA08300D2DDD7 /* Implementation */,
+				6CF1F63A1E7CA07D00D2DDD7 /* Interface */,
+				6CF1F61F1E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodeld */,
+				6C5BBED41E831C2A0000E334 /* CoreDataStack.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		6CF1F62E1E7C9DE300D2DDD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C5BBEBF1E82DBBA0000E334 /* Implementation */,
+				6C5BBEBE1E82DBB30000E334 /* Interfaces */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		6CF1F62F1E7C9DE900D2DDD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6351E7C9EA300D2DDD7 /* Subclases */,
+				6CF1F6401E7CC85C00D2DDD7 /* LoginViewController.swift */,
+				6CF1F6531E7CE05D00D2DDD7 /* TabViewController.swift */,
+				6CC5FC551E81D3E9002E99E9 /* ProfileViewController.swift */,
+				6C5BBEBC1E8216330000E334 /* HomeViewController.swift */,
+				6CC5FC531E81D3D6002E99E9 /* FavoritesViewController.swift */,
+				6C5BBEB81E8212CF0000E334 /* MapViewController.swift */,
+				6CCAE0361E862BE500ED6DEF /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6CF1F6301E7C9DF100D2DDD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6C5BBECA1E82F3030000E334 /* PlaceModel.swift */,
+				6C14AE3A1E844ABF001D4467 /* FavoriteModel.swift */,
+				6C5BBED01E82F7630000E334 /* ClientModel.swift */,
+				6C5BBEC81E82F2E60000E334 /* LocationModel.swift */,
+				6C5BBECC1E82F3450000E334 /* CoordinatesModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6CF1F6311E7C9DF700D2DDD7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6381E7C9F0E00D2DDD7 /* ConfigApp.swift */,
+				6C5BBEC41E82F0790000E334 /* ConfigApp.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		6CF1F6321E7C9E0800D2DDD7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F61C1E7C9DD300D2DDD7 /* Main.storyboard */,
+				6CF1F6241E7C9DD300D2DDD7 /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		6CF1F6331E7C9E2300D2DDD7 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6221E7C9DD300D2DDD7 /* Assets.xcassets */,
+				6CF1F6271E7C9DD300D2DDD7 /* Info.plist */,
+				6CF1F64A1E7CD51500D2DDD7 /* SDevAirBNB-Bridging-Header.h */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		6CF1F6341E7C9E3200D2DDD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6C14AE3C1E844B7C001D4467 /* DBParser.swift */,
+				6C14AE4F1E84C0AC001D4467 /* ServiceParser.swift */,
+				6C14AE511E85BF7E001D4467 /* PlacesManagement.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6CF1F6351E7C9EA300D2DDD7 /* Subclases */ = {
+			isa = PBXGroup;
+			children = (
+				6C5BBEBA1E8215A30000E334 /* PlaceTableViewCell.swift */,
+				6CCAE0381E876D4600ED6DEF /* GMapsCLLocationVC.swift */,
+				6CF6D52A1E88468900E15C4A /* PlaceMarker.swift */,
+				6CF6D52C1E8886E600E15C4A /* mainNavController.swift */,
+			);
+			name = Subclases;
+			sourceTree = "<group>";
+		};
+		6CF1F6371E7C9EBA00D2DDD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F6511E7CDB2100D2DDD7 /* UIViewController+SingleAlert.swift */,
+				6CCAE0241E86162A00ED6DEF /* UIImageView+Download.swift */,
+				6CF6D52E1E888DDD00E15C4A /* UIColor+Hex.swift */,
+				6CF6D5301E8895F700E15C4A /* UIView+Shadow.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6CF1F63A1E7CA07D00D2DDD7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F63C1E7CA0A100D2DDD7 /* IDataManager.swift */,
+				6C14AE321E844307001D4467 /* IAirbnbListData.swift */,
+				6C14AE381E844A61001D4467 /* IDataFavorite.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		6CF1F63B1E7CA08300D2DDD7 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F63E1E7CA0C000D2DDD7 /* DataManager.swift */,
+				6C14AE341E84436A001D4467 /* AirbnbListData.swift */,
+				6C14AE361E844A3F001D4467 /* DataFavorite.swift */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		B31522A50F27DD70ED2ED191 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B1024AEB9300BD5FB05CD74 /* Pods-SDevAirBNB.debug.xcconfig */,
+				4E8F73E050A23ACE45CB68CB /* Pods-SDevAirBNB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CF1F6141E7C9DD300D2DDD7 /* SDevAirBNB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF1F62A1E7C9DD300D2DDD7 /* Build configuration list for PBXNativeTarget "SDevAirBNB" */;
+			buildPhases = (
+				5E9995F774A34378B6679A2A /* [CP] Check Pods Manifest.lock */,
+				6CF1F6111E7C9DD300D2DDD7 /* Sources */,
+				6CF1F6121E7C9DD300D2DDD7 /* Frameworks */,
+				6CF1F6131E7C9DD300D2DDD7 /* Resources */,
+				C71860DC6E1D545001296644 /* [CP] Embed Pods Frameworks */,
+				E5C15903806613FD01266667 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDevAirBNB;
+			productName = SDevAirBNB;
+			productReference = 6CF1F6151E7C9DD300D2DDD7 /* SDevAirBNB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CF1F60D1E7C9DD300D2DDD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = CESARTRUJILLOSOFT;
+				TargetAttributes = {
+					6CF1F6141E7C9DD300D2DDD7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 942P2A38Q7;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6CF1F6101E7C9DD300D2DDD7 /* Build configuration list for PBXProject "SDevAirBNB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CF1F60C1E7C9DD300D2DDD7;
+			productRefGroup = 6CF1F6161E7C9DD300D2DDD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CF1F6141E7C9DD300D2DDD7 /* SDevAirBNB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CF1F6131E7C9DD300D2DDD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5BBEC51E82F0790000E334 /* ConfigApp.plist in Resources */,
+				6CF1F6261E7C9DD300D2DDD7 /* LaunchScreen.storyboard in Resources */,
+				6CF1F6231E7C9DD300D2DDD7 /* Assets.xcassets in Resources */,
+				6CF1F61E1E7C9DD300D2DDD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E9995F774A34378B6679A2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C71860DC6E1D545001296644 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDevAirBNB/Pods-SDevAirBNB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C15903806613FD01266667 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDevAirBNB/Pods-SDevAirBNB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CF1F6111E7C9DD300D2DDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF6D52F1E888DDD00E15C4A /* UIColor+Hex.swift in Sources */,
+				6C14AE501E84C0AC001D4467 /* ServiceParser.swift in Sources */,
+				6C5BBED11E82F7630000E334 /* ClientModel.swift in Sources */,
+				6C5BBEC31E82DC3E0000E334 /* ProxyService.swift in Sources */,
+				6CCAE0321E862B3300ED6DEF /* Places+CoreDataClass.swift in Sources */,
+				6CF1F6541E7CE05D00D2DDD7 /* TabViewController.swift in Sources */,
+				6CC5FC541E81D3D6002E99E9 /* FavoritesViewController.swift in Sources */,
+				6CC5FC561E81D3E9002E99E9 /* ProfileViewController.swift in Sources */,
+				6CCAE0351E862B3300ED6DEF /* Favorites+CoreDataProperties.swift in Sources */,
+				6CF6D52D1E8886E600E15C4A /* mainNavController.swift in Sources */,
+				6C14AE521E85BF7E001D4467 /* PlacesManagement.swift in Sources */,
+				6CF6D52B1E88468900E15C4A /* PlaceMarker.swift in Sources */,
+				6C14AE391E844A61001D4467 /* IDataFavorite.swift in Sources */,
+				6C5BBEC91E82F2E60000E334 /* LocationModel.swift in Sources */,
+				6CF1F6521E7CDB2100D2DDD7 /* UIViewController+SingleAlert.swift in Sources */,
+				6CCAE0251E86162A00ED6DEF /* UIImageView+Download.swift in Sources */,
+				6C14AE351E84436A001D4467 /* AirbnbListData.swift in Sources */,
+				6C5BBEBB1E8215A30000E334 /* PlaceTableViewCell.swift in Sources */,
+				6C5BBEBD1E8216330000E334 /* HomeViewController.swift in Sources */,
+				6CF1F6411E7CC85C00D2DDD7 /* LoginViewController.swift in Sources */,
+				6C5BBECD1E82F3450000E334 /* CoordinatesModel.swift in Sources */,
+				6CCAE0371E862BE500ED6DEF /* DetailViewController.swift in Sources */,
+				6C5BBEC71E82F16A0000E334 /* IAirbnbService.swift in Sources */,
+				6C5BBECF1E82F4CF0000E334 /* AirbnbService.swift in Sources */,
+				6CF1F6191E7C9DD300D2DDD7 /* AppDelegate.swift in Sources */,
+				6C5BBEC11E82DC110000E334 /* IProxyService.swift in Sources */,
+				6CCAE0331E862B3300ED6DEF /* Places+CoreDataProperties.swift in Sources */,
+				6C14AE3B1E844ABF001D4467 /* FavoriteModel.swift in Sources */,
+				6CF6D5311E8895F700E15C4A /* UIView+Shadow.swift in Sources */,
+				6C5BBED51E831C2A0000E334 /* CoreDataStack.swift in Sources */,
+				6CF1F63F1E7CA0C000D2DDD7 /* DataManager.swift in Sources */,
+				6CCAE0391E876D4600ED6DEF /* GMapsCLLocationVC.swift in Sources */,
+				6C5BBED31E831B7B0000E334 /* DepencyContainers.swift in Sources */,
+				6C5BBECB1E82F3030000E334 /* PlaceModel.swift in Sources */,
+				6C14AE331E844307001D4467 /* IAirbnbListData.swift in Sources */,
+				6C5BBEB91E8212CF0000E334 /* MapViewController.swift in Sources */,
+				6CF1F6211E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodeld in Sources */,
+				6C14AE3D1E844B7C001D4467 /* DBParser.swift in Sources */,
+				6CCAE0341E862B3300ED6DEF /* Favorites+CoreDataClass.swift in Sources */,
+				6CF1F6391E7C9F0E00D2DDD7 /* ConfigApp.swift in Sources */,
+				6C14AE371E844A3F001D4467 /* DataFavorite.swift in Sources */,
+				6CF1F63D1E7CA0A100D2DDD7 /* IDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CF1F61C1E7C9DD300D2DDD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF1F61D1E7C9DD300D2DDD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CF1F6241E7C9DD300D2DDD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CF1F6251E7C9DD300D2DDD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CF1F6281E7C9DD300D2DDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CF1F6291E7C9DD300D2DDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CF1F62B1E7C9DD300D2DDD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1024AEB9300BD5FB05CD74 /* Pods-SDevAirBNB.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 942P2A38Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SDevAirBNB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesarSoft.SDevAirBNB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDevAirBNB/SDevAirBNB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6CF1F62C1E7C9DD300D2DDD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8F73E050A23ACE45CB68CB /* Pods-SDevAirBNB.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 942P2A38Q7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SDevAirBNB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesarSoft.SDevAirBNB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SDevAirBNB/SDevAirBNB-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CF1F6101E7C9DD300D2DDD7 /* Build configuration list for PBXProject "SDevAirBNB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF1F6281E7C9DD300D2DDD7 /* Debug */,
+				6CF1F6291E7C9DD300D2DDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF1F62A1E7C9DD300D2DDD7 /* Build configuration list for PBXNativeTarget "SDevAirBNB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF1F62B1E7C9DD300D2DDD7 /* Debug */,
+				6CF1F62C1E7C9DD300D2DDD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6CF1F61F1E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CF1F6201E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodel */,
+			);
+			currentVersion = 6CF1F6201E7C9DD300D2DDD7 /* SDevAirBNB.xcdatamodel */;
+			path = SDevAirBNB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6CF1F60D1E7C9DD300D2DDD7 /* Project object */;
+}

@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.2.0)
+  - Dip (5.0.4)
+  - Dip-UI (1.0.2):
+    - Dip (~> 5.0)
+  - GoogleMaps (2.1.1):
+    - GoogleMaps/Maps (= 2.1.1)
+  - GoogleMaps/Base (2.1.1)
+  - GoogleMaps/Maps (2.1.1):
+    - GoogleMaps/Base
+  - RappleProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Dip (= 5.0.4)
+  - Dip-UI (= 1.0.2)
+  - GoogleMaps (= 2.1.1)
+  - RappleProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Dip: 6460091adcf84ae8765f4927b85b49e6a3b67bfe
+  Dip-UI: 7f03e0bc332fdda3cdf1d9a05125e5f30374dff1
+  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
+  RappleProgressHUD: ec6c9d990661c7299ca30eb034e77b2d1c5e90c3
+
+PODFILE CHECKSUM: 5a4a6fe5bdfbf0a021daa90cbdcb4f4b473b8c44
+
+COCOAPODS: 1.1.1
