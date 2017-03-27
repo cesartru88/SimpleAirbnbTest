@@ -34,8 +34,8 @@ class ProxyService: IProxyService {
                     CallBack(nil, response.result.error as NSError?)
                 }
                 if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                    CallBack(response.result.value as AnyObject?, nil)
+                    //print("JSON: \(JSON)")
+                    CallBack(JSON as AnyObject?, nil)
                 }
         }
         

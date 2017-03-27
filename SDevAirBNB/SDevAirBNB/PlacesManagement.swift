@@ -83,6 +83,7 @@ class PlacesManagement: NSObject {
                         if error_ != nil{
                             print(error!)
                             CallBack(nil, error)
+                            return
                             //if it has information return it back
                         }else if place != nil && (place?.count)! > 0{
                             let places = place as! [PlaceModel]
@@ -97,6 +98,10 @@ class PlacesManagement: NSObject {
                             placeM.placeId = placeId
                             
                             airService.getPlaceDetailFrom(placeM: placeM, client: ClientModel(), CallBack: { (response, sError) in
+                                if sError != nil{
+                                    CallBack(nil, sError!)
+                                    return
+                                }
                                 newDict = ServiceParser.parseResponseTo(dictionary: response as! [String : AnyObject])
                                 
                                 newDict["hasDetail"] = true as AnyObject?

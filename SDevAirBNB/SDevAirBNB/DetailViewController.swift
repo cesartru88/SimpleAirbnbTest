@@ -62,7 +62,12 @@ class DetailViewController: UIViewController {
                 RappleActivityIndicatorView.stopAnimating()
 
                 if error != nil{
-                    self.showSingleAlertMessage(error: error, title: nil, message: nil, completion: nil)
+                    self.showSingleAlertMessage(error: error, title: nil, message: nil, completion: {
+                        if let navController = self.navigationController {
+                            navController.popViewController(animated: true)
+                        }
+                    })
+                    return
                 }else{
                     self.place = placeM!
                     self.loadViewInfo(object: placeM)
